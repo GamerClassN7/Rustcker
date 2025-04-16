@@ -1,0 +1,9 @@
+routes:
+  - path_prefix: /api
+    target: http://localhost:3001
+    container: api_service
+    idle_timeout: 300
+
+  - path_prefix: /ws
+    target: ws://localhost:4000
+    container: ws_backend
